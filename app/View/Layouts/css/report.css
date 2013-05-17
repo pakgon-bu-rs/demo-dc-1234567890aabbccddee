@@ -1,0 +1,23 @@
+/* CSS Document */
+
+table.report{
+	width:100%;
+	border:1px solid #CCC;
+	border-collapse:collapse;
+}
+
+table.report tr{
+	
+}
+
+table.report tr.odd{
+	background-color:#CFF;
+}
+
+table.report tr.even{
+	background-color:#FFC;
+}
+
+table.report tr th{
+	background-color:#F2F2F2;
+}

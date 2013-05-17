@@ -1,0 +1,495 @@
+/* =============================================================================
+
+	STYLE.CSS
+	version: 1.6
+	updated: 2009-03-06, 13:00 GMT+1
+
+============================================================================= */
+
+/* =============================================================================
+HTML - styles
+============================================================================= */
+
+body {background-color:#eaeaea; color:#303030;font-size:12px !important;font-family:Arial, Helvetica, sans-serif !important;}
+a {color:#434951; /*color:#0085cc;*/ text-decoration: none;}
+
+a:hover, a:active, a:focus {/*color:#df0000;*/color:#434951;}
+td.action a{padding:5px;}
+#content h2 {color:#0085cc;}
+
+/*
+#content table {border:2px solid #cfcfcf;}
+#content table th {border-right:1px solid #0074B3; background-color:#0085cc; color:#fff;}
+#content table td {border:1px solid #cfcfcf;}
+#content table tr.bg td {background-color:#e8f6ff;}
+*/
+
+
+#content dl dt {color:#df0000;}
+#content fieldset {border:1px solid #ccc;}
+#content legend {background:#FFF; color:#0085cc;}
+#content acronym, #content abbr, #content .help {border-bottom:1px dotted #cfcfcf;}
+
+/* =============================================================================
+HTML - without styles
+============================================================================= */
+
+table.nostyle th, dl.nostyle dt {color:#303030 !important;}
+
+/* table style make for fixed by YaRG */
+.table-top-fillter,.no-border{border:0!important;}
+
+/* =============================================================================
+LAYOUT
+============================================================================= */
+
+#tray {background-color:#303030; color:#cfcfcf;}
+#tray a, #tray strong {color:#fff;}
+#tray a:hover, #tray a:active, #tray a:focus {color:#b4e3ff;}
+#menu {background-color:#0085cc;}
+#menu ul li a {background-color:#fff; color:#303030;}
+#menu ul li a span {background-color:#FFF;}
+#menu ul li a:hover, #menu ul li a:active, #menu ul li a:focus, #menu ul li#menu-active a {background-color:#FFF; color:#df0000;}
+#menu ul li a:hover span, #menu ul li#menu-active a span {background-color:#FFF;}
+#menu ul li#menu-active a {color:#0085cc;}
+#menu ul.f-right a {color:#df0000;}
+#content {border:1px solid #afafaf; background:#fff;}
+#footer {color:#707070;}
+#footer a {color:#707070;}
+#footer a:hover, #footer a:active, #footer a:focus {color:#303030;}
+
+/* =============================================================================
+OTHERS
+============================================================================= */
+
+#aside #logo img {border:1px solid #bfbfbf;}
+#aside #search fieldset a {color:#303030;}
+#aside #search fieldset {border:1px solid #bfbfbf;}
+#aside #search fieldset a:hover, #aside #search fieldset a:active, #aside #search fieldset a:focus {color:#df0000;}
+#aside #btn-create a {background-color:#fff; color:#303030;}
+#aside #btn-create a span {background-color:#fff;}
+#aside ul li a {border-bottom:1px solid #cfcfcf; color:#303030;}
+#aside ul li#submenu-active a {background-color:#df0000; color:#fff;}
+#aside ul li a:hover, #aside ul li a:active, #aside ul li a:focus {color:#df0000;}
+#aside ul ul li a, #aside ul li#submenu-active ul li a {border-bottom:1px solid #cfcfcf; background-color:#f5f5f5; color:#303030;}
+#aside ul li ul li a {background-color:#e3e3e3;}
+#aside ul ul li a:hover, #aside ul ul li a:active, #aside ul ul li a:focus, #aside ul li#submenu-active ul li a:hover, #aside ul li#submenu-active ul li a:active, #aside ul li#submenu-active ul li a:focus {color:#df0000;}
+#content h1 {background-color:#303030; color:#fff;}
+#content .tabs {border-bottom:1px solid #cfcfcf;}
+#content .tabs a {color:#303030;}
+#content .tabs a span {color:#303030;}
+#content .tabs .ui-tabs-selected a {color:#fff;}
+#content .tabs .ui-tabs-selected a span {color:#fff;}
+.high {color:#df0000;}
+.high-bg {background:#FFB;}
+.low {color:#707070;}
+
+/* =============================================================================
+MESSAGES
+============================================================================= */
+
+.msg.warning {border:2px solid #F2DD8C; background-color:#FFF5CC;}
+.msg.warning a {color:#df0000;} .msg.warning a:hover, .msg.warning a:active, .msg.warning a:focus {color:#303030;}
+.msg.info {border:2px solid #B8E2FB; background-color:#E8F6FF;}
+.msg.done {border:2px solid #BBDF8D; background-color:#EAF7D9;}
+.msg.error {border:2px solid #FFAEAE; background-color:#FEEBEB;}
+
+/* YaRG add this for padding image actions link */
+td.action-image-link{padding-right:7px;}
+table.table-top-fillter{width:50%;}
+table.table-top-fillter tr td{color:#000;font-weight:bold;}
+table.table-short-information,
+table.table-view-details{width:100%;margin-top:10px;}
+
+/* YaRG add this for render paging style */
+div.paging-container p.paging-caption{color:#00f;}
+div.paging-container div.paging span{color:#00f;padding-left:5px;}
+table.table-form-add{width:60%;}
+div.top-caption,
+div.top-caption-index-list{
+	height:50px;
+	background-color:#87CEEB;
+	margin-bottom:10px;
+}
+div.top-caption{width:60%;}
+div.top-caption-index-list{width:100%;}
+div.top-caption p,
+div.top-caption-index-list p{
+	padding:17px;
+	color:#363636;
+	font-size:16px;
+	font-weight:bold;
+}
+div.top-caption-index-list-dialog,div.top-caption-details{
+	width:98%;
+	height:50px;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding:10px;
+	font-weight:bold;
+	font-size:16px;
+	color:#000;
+}
+div.top-caption-index-list-dialog{background-color:#87CEEB;}
+div.top-caption-details{background-color:#8FBC8F;}
+div.form select.input-select{width:30%;}
+/* make submit button stype as plain text with page paginate */
+table.table-short-information th input[type="submit"],
+input[type="submit"].PageSelected,
+input[type="submit"].PageChoice{border:0;}
+table.table-short-information th input[type="submit"]{background-color:#0085CC;color:#fff;}
+input[type="submit"].PageSelected,
+input[type="submit"].PageChoice{color:#000;margin-top:15px;padding-left:5px;margin-left:2px !important;}
+input[type="submit"].PageChoice{background-color:#FFFFFF;}
+input[type="submit"].PageSelected{background-color:#CFCFCF;}
+input[type="submit"].PageChoice:hover{background-color:#E8E8E8;}
+
+/* Make it foe left menu style */
+div#aside ul.box li a{
+	padding-left:9px;
+	font-size:14px;
+}
+
+
+/* Make style for form input */
+.ui-pakgon-form div.top-insert-form-caption p ,
+.ui-pakgon-form div.top-edit-form-caption p,
+.ui-pakgon-form div.top-caption-index-list p,
+.ui-pakgon-form h1{
+	background-color:#303030;
+	color:#fff;
+	margin-bottom:20px !important;
+    padding: 10px 15px;
+	font-size: 180%;
+}
+
+
+.ui-pakgon-form table.table-form-add,
+.ui-pakgon-form table.table-form-edit{
+	margin-top:20px;
+	width:100%;
+}
+.ui-pakgon-form table.table-form-add tr td:first-child,table.table-form-add tr td:nth-child(2),
+.ui-pakgon-form table.table-form-edit tr td:first-child,table.table-form-edit tr td:nth-child(2){
+	color:#000;
+	font-weight:bold;
+}
+.ui-pakgon-form table.table-form-add tr td:first-child,
+.ui-pakgon-form table.table-form-edit tr td:first-child{width:120px;}
+.ui-pakgon-form table.table-form-add tr td:nth-child(2),
+.ui-pakgon-form table.table-form-edit tr td:nth-child(2){width:500px;}
+.ui-pakgon-form input[type="text"],
+.ui-pakgon-form input[type="password"],
+.ui-pakgon-form select,
+.ui-pakgon-form textarea{font-size: 14px;padding: 0.4em;}
+.ui-pakgon-form input[type="text"],
+.ui-pakgon-form input[type="password"]{
+	width:250px;
+	line-height: 1em;
+	color: #333333;
+	border: 1.5px solid #3A4F6C;
+	padding-left:2px;	
+}
+
+/* Read only all eaach input */
+.ui-pakgon-form input[type="text"]:readonly,
+.ui-pakgon-form input[type="password"]:readonly{background-color:#f00 !important;}
+.ui-pakgon-form textarea:readonly{background-color:#f00 !important;}
+.ui-pakgon-form textarea:readonly {
+	border-color: 1.5px solid #000;
+	background-color:#708090;
+}
+.ui-pakgon-form select:disabled {
+	border-color:1.5px solid #000;
+	background-color:#BEBEBE;
+}
+.ui-pakgon-form input[type="submit"],
+.ui-pakgon-form input[type="button"],
+.ui-pakgon-form input[type="reset"],
+.ui-pakgon-form button{
+	 padding: 5px;
+	 overflow: visible;
+	 border:1px;
+	 border-style:solid;
+	 cursor:pointer;
+}
+.ui-pakgon-form select,
+.ui-pakgon-form textarea {
+	color: #333333;
+	border: 1.5px solid #3A4F6C;
+}
+.ui-pakgon-form select{}
+.ui-pakgon-form textarea{width:220px;}
+
+/* Input focus */
+.ui-pakgon-form input[type=text]:focus,
+.ui-pakgon-form input[type=password]:focus,
+.ui-pakgon-form .input-type-text:focus,
+.ui-pakgon-form select:focus,
+.ui-pakgon-form textarea:focus {
+	/*border:1.5px solid  #1E90FF;*/
+	/*background-color:#E8E8E8;*/
+	/*border:1px solid #b6bfc0 !important;*/
+	
+	border: 1px solid #a8c9e4;
+	box-shadow: inset 0 1px 1.5px rgba(190, 190, 190, .4), 0 0 0 1px #e6f2f9;
+}
+.ui-pakgon-text-error{
+	color:#f00;
+	font-size:1em;
+	font-weight:bold;	
+	padding-left:10px;
+}
+.ui-pakgon-input-error{
+	color:#000 !important;
+}
+.ui-pakgon-form table.table-top-fillter,
+.ui-pakgon-form table.no-border{
+	border:0px !important;
+	border-color:#fff;
+}
+div.role_current_user{
+	font-size:2em;
+	font-weight:bold;
+	margin-top:35px; margin-left:3px; color:#FFF
+}
+
+
+/* Table style */
+
+#content table {border:2px solid #cfcfcf;}
+#content table th {border-right:1px solid #0074B3; background-color:#0085cc; color:#fff;}
+#content table td {border:1px solid #cfcfcf;}
+#content table tr.bg td {background-color:#e8f6ff;}
+
+.ui-pakgon-form table.table-top-fillter,
+.ui-pakgon-form table.no-border,
+.ui-pakgon-form table.no-border th,
+.ui-pakgon-form table.no-border td{border:0px !important;padding-left:0;margin-left:0;clear:both;}
+.ui-pakgon-form table.table-short-information tr th,
+.ui-pakgon-form table.table-short-information tr td{padding:3px 10px !important;}
+.ui-pakgon-form table.table-short-information tr th{text-align:center !important;}
+.ui-pakgon-form table.table-short-information tr th.actions,
+.ui-pakgon-form table.table-short-information tr td.actions,
+.ui-pakgon-form table.table-short-information tr th.actions{width:80px;text-align:center;}
+.ui-pakgon-form table.table-short-information tr td.actions img{width:18px;height:18px;padding:0 1px 0 5px;}
+
+/* Css for view or and details page make for style full data description */
+.ui-pakgon-form table.table-view-details{margin-top:10px !important;}
+.ui-pakgon-form table.table-view-details tr td:first-child{width:120px !important;padding:2px 10px;font-weight:bold;}
+
+
+
+
+/*.ui-pakgon-form table.table-short-information tr td.sid,
+.ui-pakgon-form table.table-short-information tr th.sid{
+	
+}*/
+.ui-pakgon-form table.table-short-information tr th.nindex,
+.ui-pakgon-form table.table-short-information tr td.nindex{width:15px;text-align:center;padding:0;}
+.ui-pakgon-form table.table-short-information tr th.sid,
+.ui-pakgon-form table.table-short-information tr td.sid{width:20px !important;text-align:center;}
+.ui-pakgon-form table.table-short-information tr td.datetime{width:130px !important;text-align:center;}
+.ui-pakgon-form table.table-short-information tr td.date{}
+.ui-pakgon-form table.table-short-information tr td.description{width:10%;}
+.ui-pakgon-form input[type="text"].datepicker{width:100px;}
+.ui-pakgon-form table.table-short-information tr th.bool,
+.ui-pakgon-form table.table-short-information tr td.bool{width:30px;text-align:center;}
+
+/*
+	CSS for make field set style
+*/
+.ui-pakgon-form fieldset,
+.fieldset {
+	border: 1px solid #d9d9d9;
+	/*padding: 1em 1.667em 1.667em 1.667em;
+	border-radius: 0.25em;
+	margin-bottom: 1.667em;*/
+	padding:0 !important;
+}
+/* IE class */
+.ie7 .block-content .ui-pakgon-form fieldset.no-margin,
+.ie7 .ui-pakgon-form.block-content fieldset.no-margin,
+.ie7 .ui-pakgon-form .block-content fieldset.no-margin {
+	display: block;
+	width: 100%;
+}
+.fieldset {
+	position: relative;
+	z-index: 89;
+	padding-top: 1.667em;
+}
+.with-legend {
+	margin-top: 1em;
+}
+/* IE class */
+.ie .ui-pakgon-form fieldset {
+	padding-top: 0;
+}
+.ui-pakgon-form legend,
+.legend {
+	margin-left: -0.833em;
+}
+.legend {
+	position: absolute;
+	left: 1.667em;
+	top: -1.083em;
+}
+/* IE class */
+.ie .ui-pakgon-form legend {
+	margin-bottom: 1em;
+	margin-top: -1em;
+}
+.ie .ui-pakgon-form .fieldset-with-legend {
+	margin-top: 2em;
+}
+.ie .ui-pakgon-form .fieldset-with-legend-first-child {
+	margin-top: 1em;
+}
+.ui-pakgon-form legend a,
+.legend a {
+	display: block;
+	margin: -0.25em -0.333em -0.333em -0.5em;
+	padding: 0.25em 20px 0.333em 0.5em;
+	color: #666;
+	background: url(/img/icon/chevron-off.png) no-repeat right 60%;
+}
+.ui-pakgon-form legend a:hover,
+.legend a:hover {
+	color: #3399cc;
+	background-image: url(/img/icon/chevron.png);
+}
+
+.ui-pakgon-form fieldset.collapsed,
+.fieldset.collapsed {
+	border: none;
+	padding: 0;
+	background: none;
+}
+.ui-pakgon-form fieldset.no-margin.collapsed,
+.fieldset.no-margin.collapsed {
+	padding-left: 1.667em;
+}
+.ui-pakgon-form fieldset.no-margin.collapsed:last-child,
+.fieldset.no-margin.collapsed:last-child {
+	padding-bottom: 1.667em;
+}
+/* IE class */
+.ui-pakgon-form fieldset.no-margin.collapsed.last-child,
+.fieldset.no-margin.collapsed.last-child {
+	padding-bottom: 0.667em;
+}
+.ui-pakgon-form fieldset.collapsed > *,
+.fieldset.collapsed > * {
+	display: none;
+}
+.ui-pakgon-form fieldset.collapsed legend,
+.fieldset.collapsed .legend {
+	display: block;
+	margin-left: 0;
+}
+.ie7 .ui-pakgon-form fieldset.collapsed legend,
+.ie7 .fieldset.collapsed .legend {
+	display: inline-block;
+}
+.ui-pakgon-form fieldset.collapsed legend a,
+.fieldset.collapsed .legend a {
+	background-image: url(/img/icon/chevron-expand-off.png);
+}
+.ui-pakgon-form fieldset.collapsed legend a:hover,
+.fieldset.collapsed .legend a:hover {
+	background-image: url(/img/icon/chevron-expand.png);
+}
+		
+fieldset legend .show-expanded, .fieldset .legend .show-expanded { display: inline; }
+fieldset legend .show-collapsed, .fieldset .legend .show-collapsed { display: none; }
+fieldset.collapsed legend .show-expanded, .fieldset.collapsed .legend .show-expanded { display: none; }
+fieldset.collapsed legend .show-collapsed, .fieldset.collapsed .legend .show-collapsed { display: inline; }
+
+.block-content .ui-pakgon-form fieldset.no-margin,
+.block-content.ui-pakgon-form fieldset.no-margin,
+.ui-pakgon-form .block-content fieldset.no-margin,
+.block-content .fieldset.no-margin {
+	border-color: #999999;
+	border-width: 1px 0 1px 0;
+}
+.ui-pakgon-form fieldset.no-margin legend,
+.fieldset.no-margin .legend {
+	margin-left: 0;
+}
+/* IE class */
+.ie7 .ui-pakgon-form fieldset.no-margin legend {
+	margin-left: -0.667em;
+}
+
+.ui-pakgon-form fieldset:last-child,
+.fieldset:last-child {
+	margin-bottom: 0;
+}
+/* IE class */
+.ui-pakgon-form fieldset.last-child,
+.fieldset.last-child {
+	margin-bottom: 0;
+}
+.block-content .ui-pakgon-form fieldset.no-margin:last-child,
+.block-content.ui-pakgon-form fieldset.no-margin:last-child,
+.ui-pakgon-form .block-content fieldset.no-margin:last-child,
+section .fieldset.no-margin:last-child {
+	border-bottom: 0;
+}
+/* IE class */
+.block-content .ui-pakgon-form fieldset.no-margin.last-child,
+.block-content.ui-pakgon-form fieldset.no-margin.last-child,
+.ui-pakgon-form .block-content fieldset.no-margin.last-child,
+.fieldset.no-margin.last-child {
+	border-bottom: 0;
+}
+
+.button{
+	padding:5px;
+	background:#999;
+	color: white; 
+	cursor:pointer;
+	overflow: visible;
+	border-style:outset;
+	border-top:inset black;
+	/* border-left:outset black;
+	 border-right: solid black;
+	 border-bottom: solid black;*/
+}
+a.button:hover{color:#fff;}
+
+/* Make this CSS For Carlendar */
+#calendarCurrentDate {
+	background:#8B8989;
+	width:195px;
+	height:27px; 
+	float:left; 
+	clear:none; 
+	margin: 2px 2px 0 5px;
+}
+.calendarShowDate{
+    font-family:Helvetica; 
+	font-size:14px; 
+	font-weight:bold; 
+	color:#FFFAFA; 
+	text-align: center;  
+	vertical-align: middle; 
+	padding: 2px 0 0 0;
+}
+#calendarCurrentWeek {
+        font-size:10px;
+		font-weight:bold;
+        width:195px;
+        color:#333333;
+        background: #FFFAFA;
+        float:left; 
+	    margin: 0 0 0 5px;
+		clear:both;
+}
+#calendarCurrentDOM {
+	color:#ffffff;
+	background-color:#938c8c;
+}
+.bg_weekwidgets{background:#bababa;}
+.bg_daywidgets{background:#FFFAFA;}

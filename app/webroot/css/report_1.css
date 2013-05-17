@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ margin-left:23px; font-family:Helvetica; font-size:14px; color:#000000;}
+
+font{font-family:Helvetica,arial; font-size:13px; font-weight:normal; color:#000000;}
+
+h1 a{ font-family:Helvetica,arial; font-size:20px; font-weight:bold; color:#000000;}
+h1 a:link{font-family:Helvetica,arial; font-size:20px; color:#000000; font-weight:bold; text-decoration:none;}
+h1 a:hover{font-family:Helvetica,arial; font-size:20px; color:#ed1c24; text-decoration:none;}
+h1 a:visited{ text-decoration:none;}
+
+img { border:none;}
+a img { border:none;}
+
+/*--------- links ----------*/
+a{ font-family:Helvetica,arial; font-size:13px; font-weight:normal;text-decoration:none; color:#000;}
+a:link{ font-family:Helvetica,arial; font-size:13px; font-weight:normal; text-decoration:none; color:#000;}
+a:hover{font-family:Helvetica,arial; font-size:13px; font-weight:normal; color:#ed1c24; text-decoration:none;}
+a:visited{ text-decoration:none;}
+.link_gray a{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#777777; text-decoration:none;}
+.link_gray a:link{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#777777; text-decoration:none;}
+.link_gray a:hover{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#000000; text-decoration:none;}
+.link_black a{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#000000; text-decoration:none;}
+.link_black a:link{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#000000; text-decoration:none;}
+.link_black a:hover{font-family:helvetica,arial,arial; font-size:12px; font-weight:normal; color:#ed1c24; text-decoration:none;}
+
+/*---------- table -----------*/
+table { empty-cells:show;}
+table.cp_bg{ border-left:1px; border-left-style:solid; border-left-color:#bbbbbb;
+			 border-right:1px; border-right-style:solid; border-right-color:#bbbbbb;
+			 border-bottom:1px; border-bottom-style:solid; border-bottom-color:#bbbbbb;}
+table.cp{ empty-cells:show;border-bottom:1px; border-bottom-style:solid; border-bottom-color:#ffffff; border-left:1px; border-left-style:solid; border-left-color:#ffffff; margin:3px 3px 3px 3px;}
+table.cp th{ empty-cells:show;font-family:helvetica,arial,arial; font-size:12px; font-weight:bold; color:#555555; text-align:center; background-color:#cccccc;
+				 border-right:1px; border-right-style:solid; border-right-color:#ffffff;
+				 border-top:1px; border-top-style:solid; border-top-color:#ffffff;
+				 height:18px;padding-top:2px;
+				 }
+table.cp tr.odd{ background-color:#f9f9f9; color:#555555;}
+table.cp tr.even{ background-color:#e9e9e9;color:#555555;}
+table.cp tr.select{ background-color:#999999; color:#ffffff;}
+table.cp td{ padding:3px 3px 3px 3px; font-family:helvetica,arial,arial; font-size:12px; font-weight:normal;
+			        border-right:1px; border-right-style:solid; border-right-color:#ffffff;
+			        border-top:1px; border-top-style:solid; border-top-color:#ffffff;}
+					
+/*--------- tabs ----------*/
+.tab_bg{background-image:url(../img/portal/tabs1.jpg); background-position:left top; background-repeat:repeat-x; height:33px;}
+.tab td.bg_left{background-image:url(../img/portal/tableft1.gif); background-position:left top; background-repeat:no-repeat;height:33px; width:6px;}
+.tab td.bg_mid{ background-image:url(../img/portal/tabcenter.gif); background-position:left top; background-repeat:repeat-x;}
+.tab td.bg_right{background-image:url(../img/portal/tabright1.gif); background-position:left top; background-repeat:no-repeat;height:33px; width:6px;}
+.tab{ float:left;clear:right;height:33px;}
+#right1{float:right; width:4px; background-image:url(../img/portal/right_border1.jpg); background-position:right top; background-repeat:no-repeat;height:33px;clear:right;}
+
+/*--------- general button -------------*/
+.cp_bt{height:28px;}
+.cp_bt td.bt1{width:9px;background-image:url(../img/portal/cp_bt1.jpg);background-position:left top; background-repeat:no-repeat;}
+.cp_bt td.bt2{background-image:url(../img/portal/cp_bt2.jpg);background-position:left top; background-repeat:repeat-x; text-align:center; font-family:helvetica,arial,arial; font-size:13px; font-weight:normal; color:#666666;}
+.cp_bt td.bt2:hover{font-family:helvetica,arial,arial; font-size:13px; font-weight:normal; color:#ed1c24;}
+.cp_bt td.bt3{width:10px;background-image:url(../img/portal/cp_bt3.jpg);background-position:left top; background-repeat:no-repeat;}
+
+/*-------- menu ---------*/
+.cp_menu{width:auto; height:auto;}
+.cp_menu tr td{ background-image:url(../img/portal/cp_portal_13.jpg); background-position:left top; background-repeat:no-repeat; padding-left:14px; height:22px;}
+.cp_menu tr td:hover{ background-image:url(../img/portal/cp_portal_21.jpg); background-position:left top; background-repeat:no-repeat;height:22px;}
+
+/*-------- text box -------*/
+input[readonly]{background:#cccccc; color:#555555; border:1px solid #999999;}
